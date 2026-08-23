@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Travel Quiz</title>
+</head>
+
+<body>
+
+    <!-- naviatie -->
+    <div class="container">
+        <nav class="navbar">
+            <div class="nav-right">
+                <a href="index.html">Home</a>
+                <a href="quiz.html" class="is-active">Quiz</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </div>
+
+
+    <!-- Quiz -->
+    <header class="quiz-hero">
+
+        <div class="quiz-blob quiz-blob-1"></div>
+        <div class="quiz-blob quiz-blob-2"></div>
+
+        <div class="quiz-hero-content">
+
+            <p class="quiz-eyebrow">TRAVEL Type</p>
+
+            <h1>
+                What kind of
+                <span>traveller</span>
+                are you?
+            </h1>
+
+            <p class="quiz-intro">
+                Answer a few simple questions and see which holiday
+                is best for you: a relaxing beach escape, an exciting city
+                tour or an active sporty adventure.
+            </p>
+
+            <a href="#quiz" class="quiz-start-button">
+                Start the quiz
+                <span>↓</span>
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- Quiz selectie -->
+    <main class="quiz-section" id="quiz">
+
+        <div class="quiz-container">
+
+            
+            <div class="quiz-progress-container">
+
+                <div class="quiz-progress-text">
+                    <span id="questionNumber">Question 1</span>
+                    <span id="questionTotal">of 6</span>
+                </div>
+
+                <div class="quiz-progress">
+                    <div id="progressBar"></div>
+                </div>
+
+            </div>
+
+
+            <!-- Question -->
+            <div class="quiz-card" id="quizCard">
+
+                <p class="question-category">
+                    YOUR TRAVEL STYLE
+                </p>
+
+                <h2 id="questionText">
+                    Loading question...
+                </h2>
+
+                <div class="answers" id="answers">
+                    <!-- JavaScript-->
+                </div>
+
+                <div class="quiz-navigation">
+
+                    <button
+                        type="button"
+                        id="previousButton"
+                        class="quiz-secondary-button"
+                        disabled>
+                        ← Previous
+                    </button>
+
+                    <button
+                        type="button"
+                        id="nextButton"
+                        class="quiz-next-button"
+                        disabled>
+                        Next →
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Resultaat -->
+            <div class="quiz-result" id="quizResult">
+
+                <p class="result-eyebrow">
+                    YOUR PERFECT TRIP
+                </p>
+
+                <div id="resultIcon" class="result-icon">
+                    🏖️
+                </div>
+
+                <h2 id="resultTitle">
+                    Your result
+                </h2>
+
+                <p id="resultDescription">
+                    Your travel personality will appear here.
+                </p>
+
+                <div class="result-destination">
+
+                    <span>YOU SHOULD TRY</span>
+
+                    <strong id="resultDestination">
+                        Somewhere amazing
+                    </strong>
+
+                </div>
+
+                <button
+                    type="button"
+                    id="restartButton"
+                    class="quiz-start-button">
+                    Take the quiz again
+                </button>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+
+
+
+    <!-- Quiz JavaScript om te activeren -->
+    <script src="quiz.js"></script>
+
+</body>
+</html>
